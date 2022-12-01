@@ -18,7 +18,7 @@ const address=require("./user_contract").address2;
 
 const CurrentRide=require("./models/Auction");
 
-mongoose.connect('mongodb://admin:Priyam123@ds353457.mlab.com:53457/ridex', {useNewUrlParser: true});
+mongoose.connect('mongodb+srv://sicelo:KMskxzPjA4uH4b43@ecommerceapi.qi95r.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true});
 
 const app=express();
 
