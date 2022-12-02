@@ -1,8 +1,9 @@
 import { View, Image, Text, StyleSheet, TouchableOpacity } from "react-native"
+import Orderpage from "../screens/Orderpage"
 
-function Cardetailscard(){
+function Cardetailscard(props){
     return(
-    <TouchableOpacity style={styles.cardetailscard}>
+    <TouchableOpacity style={styles.cardetailscard} onPress={()=>{props.onpress()}}>
         <View style={{width:'100%', height: '60%'}}>
             <Image style={{width: '100%', height: '100%', resizeMode: 'cover' }} source={require("../assets/images/BMW-7-Series.png")} />
         </View>

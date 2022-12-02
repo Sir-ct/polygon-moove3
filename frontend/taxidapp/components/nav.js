@@ -12,6 +12,7 @@ function nav(){
 const styles = StyleSheet.create({
     nav: {
         width: "100%",
+        backgroundColor: '#eeeeee',
         flexDirection: 'row',
         justifyContent: "space-between",
         alignItems: "center",

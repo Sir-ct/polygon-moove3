@@ -4,8 +4,9 @@ import { Marker } from "react-native-maps"
 import Nav from '../components/nav'
 import Cardetailscard from "../components/Cardetailscard"
 import Ionicons from '@expo/vector-icons/Ionicons';
+import Orderpage from "./Orderpage"
 
-function Chooseride(){
+function Chooseride({navigation}){
 
     let cardata = [
         {name: "care name"},
@@ -13,6 +14,10 @@ function Chooseride(){
         {name: 'another car name'},
         {name: 'car name'}
     ]
+
+    function nextpage(){
+        navigation.navigate(Orderpage)
+    }
    
     return(
         <SafeAreaView style={styles.chooseridepage}>
@@ -41,7 +46,7 @@ function Chooseride(){
                 <FlatList 
                     horizontal
                     data={cardata}
-                    renderItem = {({item})=> (<Cardetailscard />)}
+                    renderItem = {({item})=> (<Cardetailscard onpress={nextpage} />)}
                 />
             </View>
         
