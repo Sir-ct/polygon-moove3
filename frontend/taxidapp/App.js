@@ -3,8 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Destination from './screens/Destination'
-
-
+import Orderpage from './screens/Orderpage';
 import Chooseride from './screens/Chooseride'
 
 const Stack = createNativeStackNavigator()
@@ -12,10 +11,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen
-          name="Chooseride"
-          component={Chooseride}
-        />
+        <Stack.Screen name='Destination' component={Destination} />
+        <Stack.Screen name='Chooseride' component={Chooseride} />
+        <Stack.Screen name="Orderpage" component={Orderpage}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
