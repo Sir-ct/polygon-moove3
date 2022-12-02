@@ -6,6 +6,7 @@ import Destination from './screens/Destination'
 import Orderpage from './screens/Orderpage';
 import Chooseride from './screens/Chooseride'
 import Login from './screens/Login';
+import Signup from './screens/Signup';
 
 const Stack = createNativeStackNavigator()
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name='Login' component={Login} />
+        <Stack.Screen name='Signup' component={Signup} />
         <Stack.Screen name='Destination' component={Destination} />
         <Stack.Screen name='Chooseride' component={Chooseride} />
         <Stack.Screen name="Orderpage" component={Orderpage}/>
