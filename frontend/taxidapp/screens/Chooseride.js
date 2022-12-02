@@ -4,7 +4,6 @@ import { Marker } from "react-native-maps"
 import Nav from '../components/nav'
 import Cardetailscard from "../components/Cardetailscard"
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { useRef } from "react"
 
 function Chooseride(){
 
@@ -14,7 +13,7 @@ function Chooseride(){
         {name: 'another car name'},
         {name: 'car name'}
     ]
-    let ref = useRef(null)
+   
     return(
         <SafeAreaView style={styles.chooseridepage}>
         <Nav />
@@ -40,7 +39,6 @@ function Chooseride(){
                 </MapView>
             <View style={styles.choosecar}>
                 <FlatList 
-                    ref={ref}
                     horizontal
                     data={cardata}
                     renderItem = {({item})=> (<Cardetailscard />)}
