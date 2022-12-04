@@ -17,15 +17,6 @@ require("dotenv").config();
 
 module.exports=(app)=>{
 
-    app.get("/signupd",(req,res)=>{
-        if(req.session.identity!== undefined){
-            res.redirect("/homed");
-        }
-        else{
-            res.render("signupd",{message:null});
-        }
-    });
-
     app.post("/signupd",async (req,res)=>{
         var name=req.body.name;
         var phno=req.body.phno;
@@ -104,6 +95,8 @@ module.exports=(app)=>{
             }
         });
 */
+
+        res.json({username: username, vehiclenum: vehicleNo, vehiclename: vehicle, usertype: userType})
 });
 
 

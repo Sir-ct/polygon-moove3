@@ -5,6 +5,20 @@ function Login({navigation}){
     function gotosignup(){
         navigation.navigate('Signup')
     }
+
+    function loginfetch(){
+        fetch("/login",{
+            method: 'post',
+            body: JSON.stringify({
+                email: 'deis@gmail.com',
+                password: 'password'
+            })
+        }).then((res)=>(res.json())).then((data)=>{
+            console.log(data)
+        }).catch((err)=>{
+            console.log(err)
+        })
+    }
     return(
         <SafeAreaView style={styles.loginpage}>
             <Text style={{color: 'white', fontWeight: 'bold', fontSize: 50, textAlign: 'center', paddingTop: 50, marginBottom: 100}}>Taxi!</Text>
@@ -21,7 +35,7 @@ function Login({navigation}){
                 <Text style={{color: 'white'}}>password</Text>
                 <TextInput secureTextEntry={true} style={styles.textinputstyle}/>
                 </View>
-                <TouchableOpacity style={styles.loginbtn}>
+                <TouchableOpacity style={styles.loginbtn} onPress={loginfetch}>
                     <Text style={{textAlign: 'center', color: 'white', fontSize: 16, fontWeight: 'bold'}}>Login</Text>
                 </TouchableOpacity>
             </View>

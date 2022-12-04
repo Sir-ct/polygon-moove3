@@ -22,7 +22,7 @@ mongoose.connect('mongodb+srv://sicelo:KMskxzPjA4uH4b43@ecommerceapi.qi95r.mongo
 
 const app=express();
 
-app.set('view engine','ejs');
+//app.set('view engine','ejs');
 app.use(session({
     key:"user_sid",
     secret:"sometext",
@@ -53,13 +53,13 @@ app.get("/",async (req,res)=>{
     // else{
     //     res.render("index",{message:null});
     // }
-    res.render("index",{message:null});
+    res.send("index");
 
 });
 
 app.get("/signup",async(req,res)=>{
     
-    res.render("sign");
+    res.send("sign");
 });
 
 

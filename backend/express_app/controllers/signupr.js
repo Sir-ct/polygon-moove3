@@ -20,15 +20,6 @@ require("dotenv").config();
 
 module.exports=(app)=>{
 
-    app.get("/signupr",(req,res)=>{
-        if(req.session.username!== undefined){
-            res.redirect("/homer");
-        }
-        else{
-        res.render("signupr",{message:null});
-        }
-    });
-
     app.post("/signupr",async (req,res)=>{
         const name=req.body.name;
         const phno=req.body.phno;
@@ -68,7 +59,7 @@ module.exports=(app)=>{
         req.session.privateKey=privateKey;
         req.session.userType=userType;
         
-        res.redirect("/homer");
+        res.json({message: 'account created successfully', username: username, usertype: userType});
         
 });
 

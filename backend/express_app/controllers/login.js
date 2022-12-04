@@ -56,19 +56,15 @@ app.get("/login",async (req,res)=>{
                 req.session.privateKey=response['0'];
                 req.session.userType=response['4'];
 
-                console.log(req.session);
-                if(response['4']==="Driver"){
-                    res.redirect("/homed");
-                }else{
-                    res.redirect("/homer");
-                }
+                res.json({username: username, privatekey: response['0'], usertype: response['4'] })
+               
             }else{
 
-                res.render("index",{message:"invalid credentials"});
+                res.json({message:"invalid credentials"});
             }
             
         }else{
-            res.render("index",{message:"No such user"});
+            res.json({message:"No such user exists"});
         }
 
 
