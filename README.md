@@ -14,6 +14,7 @@ This application Is able to register and store users information on the blockcha
 ### Backend Stack
 * Node Js
 * Solidity
+* MongoDB
 
 ------------------------------------------
 ## Mobile App workflow
