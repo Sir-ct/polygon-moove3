@@ -1,10 +1,12 @@
-# Taxi(Decentralised hail rider application)
+# Moove3(Decentralised hail rider application)
 
 ## Description
 
-Taxi is a decentralised hail rider app that enable users order and pay for rides using the blockchain. It provides a trustless system where every event is handled with a smart contract whenever certain issues are met.
+Taxi is a decentralised ride-hailing app that enable users order and pay for rides using the blockchain. It provides a trustless system where every event is handled with a smart contract whenever certain issues are met.
 
 This application Is able to register and store users information on the blockchanin. Drivers are also able to register on the application, the application also has map functionalities to enable easy navigation
+
+Moove3 in the long run would solve the problem of high transport fare for Africans and poor nations, by minting our MoovCoin to use as payment for a ride. You would need to play short driving tutorials and or car racing games, earn some crypto and use on any of our licensed ride-sharing and Taxi partners in your city. The aim of the game would be to teach driving skills, road ethics, and car maintenance. In turn, users earn free ride instead with their tokens. This will close the gap of poverty and lack of short-finance for transports. The Moove3 Team aim to digitalize and reimagine transportation across Africa with focus on the digital age population.
 
 -----------------------------------------
 ## Tech Stack
