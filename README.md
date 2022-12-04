@@ -2,7 +2,9 @@
 
 ## Description
 
-Taxi is a decentralised hail rider app that enable users order and pay for rides using the blockchain
+Taxi is a decentralised hail rider app that enable users order and pay for rides using the blockchain. It provides a trustless system where every event is handled with a smart contract whenever certain issues are met.
+
+This application Is able to register and store users information on the blockchanin. Drivers are also able to register on the application, the application also has map functionalities to enable easy navigation
 
 -----------------------------------------
 ## Tech Stack
