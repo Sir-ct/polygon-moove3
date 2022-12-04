@@ -65,8 +65,9 @@ This application Is able to register and store users information on the blockcha
 
 - `express_app` : Source code for nodejs backend
 - `Contracts` : Smart Contracts.
+-----------
 
 ### Team members
-* @vshamsudeen (team lead) 
-* @sicelo17 (smart contract and backend dev)
-* @sir-ct (mobile app dev)
+* @vshamsudeen (team lead) - shamsudeenvincent@gmail.com
+* @sicelo17 (smart contract and backend dev) - sicelositsha@yahoo.com
+* @sir-ct (mobile app dev) - davidsirct@gmail.com
