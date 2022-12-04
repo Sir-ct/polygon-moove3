@@ -1,3 +1,18 @@
+#Taxi(Decentralised hail rider application)
+
+## Description
+
+Taxi is a decentralised hail rider app that enable users order and pay for rides using the blockchain
+
+-----------------------------------------
+## Tech Stack
+
+### Mobile Stack
+* React Native (Javascript)
+### Backend Stack
+* Node Js
+* Solidity
+
 ------------------------------------------
 ## Mobile App workflow
 
