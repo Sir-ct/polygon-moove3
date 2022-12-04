@@ -1,8 +1,8 @@
-# Moove3(Decentralised hail rider application)
+# Moove3( A decentralized ride-hailing mobile application)
 
 ## Description
 
-Moove3 is a decentralised ride-hailing app that enable users order and pay for rides using the blockchain. It provides a transparent system where every transaction is vetted with smart contract when predetermined conditions are met.
+Moove3 is a decentralized ride-hailing app that enable users order and pay for rides using the blockchain. It provides a transparent system where every transaction is vetted with smart contract when predetermined conditions are met.
 
 This application is able to register and store users' contracts and data on the blockchain platform. The Dapp also enable driver's registration. It has map functionalities to help easy navigation.
 
